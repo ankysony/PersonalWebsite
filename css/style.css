@@ -23,7 +23,6 @@ html {
     position: relative;
     overflow-y: hidden;
 }
-
  #showcase::after {
     pointer-events: none;
     content: '';
@@ -223,7 +222,7 @@ em{
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
   /* Main heading for card's front cover */
