@@ -46,7 +46,8 @@ nav
     height: 40px;
     width: 100%;
     background-color:#36393f;
-    position: fixed;
+    /* position: fixed; */
+    z-index: 150;
     text-align: center;
     word-spacing: 20px;
     color: #eee;
@@ -787,13 +788,53 @@ a
         display: none;
     }
     /*projects*/
+    .card
+    {
+       height: 10rem;
+       width: 10rem;
+    }
+    .flip-card
+    {
+       height: 10rem;
+       width: 10rem;
+    }
+    .card-front
+    {
+       height: 10rem;
+       width: 10rem;
+    }
+    .inside-page
+    {
+       width: 10rem;
+    }
+    .card:hover
+    {
+       width: 20rem;
+    }
     .card-area
     {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
-
     }
+    .card-section
+    {
+      padding-top: 20px;
+      padding-bottom: 70px;
+      margin-left: 2px;
+    }
+    .card-front
+    {
+      width: 10rem;
+      height: 10rem;
+    }
+    .inside-page__btn
+    {
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: inline-block;
+    }
+    
     /*contact*/
     .form-box
     {
