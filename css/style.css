@@ -12,6 +12,10 @@ html {
   margin: 0;
 }
 /*==================================== Showcase & navbar ====================================*/
+.navigation
+{
+  font-family: 'Proza Libre', arial, helvetica;
+}
 #showcase 
 {
     margin: 0;
@@ -215,11 +219,7 @@ em{
 /*==================================== Projects ====================================*/
 .projects
 {
-    background: linear-gradient(
-    to bottom right,
-    #eee8dd,
-    #e3d9c6
-  );
+  background:#36393f;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
