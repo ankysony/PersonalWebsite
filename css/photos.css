@@ -178,6 +178,18 @@ i
 {
     color: darkred;
 }
+@media screen and (max-width: 580px)
+{
+    hr 
+    {
+      display: none;
+    }
+    footer 
+    {
+       margin-top: 2750px;
+    }
+
+}
 
 
 
