@@ -1,0 +1,324 @@
+body{
+  background-color: #FAFAFA;
+  margin: 0;
+
+}
+/* This is the styles for the menu bar */
+
+#header
+{
+
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  z-index: 999;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 14px -7px rgba(3,3,3,0.61);
+  -moz-box-shadow: 0px 6px 14px -7px rgba(3,3,3,0.61);
+  box-shadow: 0px 6px 14px -7px rgba(3,3,3,0.61);
+}
+/*This is the styles for the navigation links*/
+#header a
+{
+  text-decoration:none;
+  font-size: 20px;
+  color: #DF013A;
+  font-family: 'Lato';
+}
+#header a:hover
+{
+  font-weight: bold;
+}
+
+#header div
+{
+  width: 120px;
+  display: inline-block;
+  position: relative;
+}
+
+#header div:hover
+{
+  border-bottom:4px solid #DF013A;
+
+}
+
+  /*This is the styles for the Search Icon*/
+#header i
+  {
+    font-size: 25px;
+    color: #A4A4A4;
+  }
+  #header i:hover
+  {
+    color:  #DF013A
+  }
+/*This is the style for the dropdown menu*/
+
+#header .dropdown-content
+{
+  display: none ;
+  position: absolute;
+}
+
+#header .dropdown:hover .dropdown-content
+{
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 53px;
+}
+.dropdown-content
+{
+  background-color: white;
+}
+.dropdown-content a:hover
+{
+font-weight: bold;
+}
+
+/* This is the style for the Articles-latest cover */
+.latest
+{
+
+  height: 350px;
+  width: 100%;
+  position: relative;
+  top: 20px;
+  background-image: url('https://newevolutiondesigns.com/images/freebies/city-wallpaper-47.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 2px 7px 8px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 7px 8px -5px rgba(0,0,0,0.75);
+  box-shadow: 2px 7px 8px -5px rgba(0,0,0,0.75);
+}
+.latest:before
+{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:linear-gradient(to bottom right, #F5A9A9, #0B3B39);
+  opacity: 0.4;
+}
+.latest a
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  text-decoration: none;
+}
+.latest h1
+{
+  color:  #FBF8EF;
+  font-family: 'Lato';
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 350px;
+}
+#articles .latest h2
+{
+  color: white;
+  font-style: italic;
+  font-family: Lato;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  margin-top: -180px;
+}
+/*This is the style for the read more section*/
+#articles
+{
+  text-align: center;
+}
+.readmore
+{
+font-size: 30px;
+position: relative;
+top: 30px;
+font-family: Lato;
+color: #A4A4A4;
+font-style: italic;
+}
+hr
+{
+width: 600px;
+position: relative;
+top: 40px;
+}
+/*This is the style for the article grid*/
+.grid
+{
+  width: 100%;
+  height: 765px;
+  position: relative;
+  top: 15px;
+  text-align: center;
+
+}
+/*This is the style for the article buttons*/
+.grid div
+{
+  position: relative;
+  border: 1px solid #D8D8D8;
+  height: 380px;
+  width: 280px;
+  background-color: white;
+  display: inline-block;
+  margin: 50px 10px 0px 10px;
+}
+.grid div .divlink
+{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.grid div .divlink:hover
+{
+  -webkit-box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
+
+}
+/*This is the style for big article*/
+.grid .big
+{
+  width: 590px;
+  height: 380px;
+}
+/*This is the style for the article grid content - images ,text and authors badge*/
+/*Images*/
+.grid div img
+{
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+/*Text*/
+.grid div h1
+{
+  font-size: 20px;
+  font-family: Lato;
+  color: #585858;
+  position: absolute;
+  top: 190px;
+  left: 10px;
+}
+.grid div h2
+{
+  font-size: 15px;
+  font-family: Lato;
+  color: #A4A4A4;
+  position: absolute;
+  top: 220px;
+  left: 15px;
+}
+.grid div p
+{
+  font-size: 14px;
+  color: #424242;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  font-family: Lato;
+  font-weight: bold;
+  top: 240px;
+  text-align: left;
+}
+/*Authors badge*/
+.grid div .author
+{
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+.grid div .name
+{
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  font-family: 'Lato';
+  font-size: 17px;
+  color:  #424242;
+  z-index: 2;
+}
+.grid div .name:hover
+{
+  text-decoration: underline;
+}
+/*This is the style for the authors page*/
+#authors
+{
+text-align: center;
+position: absolute;
+top: 90px;
+}
+#authors div
+{
+  height: 400px;
+  width: 1000px;
+  border: 1px solid #424242;
+  display: inline-block;
+  position: relative;
+}
+#authors div img
+{
+  height: 240px;
+  width: 220px;
+  border-radius: 140px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#authors div hr
+{
+  width: 600px;
+  border: none;
+  height: 6px;
+  background-color: #FA5858;
+  position: absolute;
+  right:130px;
+  top: 90px;
+}
+#authors div p
+{
+  text-align: justify;
+  line-height: 30px;
+  position: absolute;
+  left: 270px;
+  right: 100px;
+  top: 95px;
+  text-indent: 50px;
+  font-family: 'Lato';
+
+
+}
+#authors div h1
+{
+  position: absolute;
+  font-family: 'Poiret One';
+  left: 270px;
+  top: 30px;
+
+}
