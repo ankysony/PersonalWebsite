@@ -4,11 +4,15 @@ body{
   margin: 0;
   padding: 0;
 }
+.background
+{
+   height: 1000px;
+   background: #F0F8FF;
+}
 
 /* This is the style for the Articles-latest cover */
 .latest
 {
-
   height: 350px;
   width: 100%;
   position: relative;
@@ -115,8 +119,8 @@ top: 40px;
 .grid .divlink:hover
 {
   -webkit-box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
+   /* box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75); */
 
 }
 /*This is the style for big article*/
@@ -168,7 +172,6 @@ box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.75);
 }
 .footer-bottom
 {
-    margin-top: 150px;
     padding: 10px;  
     text-align: center;
     color: #999999;
@@ -184,9 +187,9 @@ i
     {
       display: none;
     }
-    footer 
+    .background
     {
-       margin-top: 2750px;
+      height: 3600px;
     }
 
 }
