@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
   margin: 0;
 }
-/*==================================== Showcase & navbar ====================================*/
+/*==================================== Showcase & sidebar ====================================*/
 .navigation
 {
   font-family: 'Proza Libre', arial, helvetica;
@@ -45,45 +45,60 @@ body {
     -webkit-font-smoothing: antialiased;
     margin: 0;
 }
-nav
+.sidebar 
 {
-    height: 40px;
-    width: 100%;
-    background-color:#36393f;
-    /* position: fixed; */
-    z-index: 150;
-    text-align: center;
-    word-spacing: 20px;
-    color: #eee;
+  opacity: 0.6;
+   position: fixed;
+   height: 100%;
+   width: 30px;
+   background-color: #36393f;
+   overflow: hidden;
+   transition: 0.8s;
+   box-shadow: 5px 5px 10px rgb(141,141,141);
 }
-a:hover
+.sidebar:hover
 {
-    color: skyblue; 
+   width: 140px;
 }
-nav ul
+.sidebar:hover .menu ul li span
 {
-    padding: 0;
-    margin: 0;
+   opacity: 1;
+   pointer-events: visible;
 }
-nav li 
+.sidebar .menu
 {
-    display: inline;
-}  
-nav a 
-{
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 0;
-    color: #eee;
-    text-decoration: none;
+   display: flex;
+   width: 30px;
+   height: 100%;
+   background-color: #36393f;
+   color: #f2f2f2;
 }
-nav a#openup 
+.menu a i
 {
-    display: none;
+   margin-left: 5px;
+   margin-top: 100px;
+   font-weight: bolder;
 }
-
+.menu a span
+{
+   position: absolute;
+   margin-top: 100px;
+   margin-left: 20px;
+   opacity: 0;
+   font-size: 15px; 
+   transition: 1.2s;
+   color: white;
+}
+.menu ul li
+{
+  display: flex;
+  cursor: pointer;
+}
+.menu ul li:hover span
+{
+   margin-left: 30px;
+   color: white;
+}
 /* big heading */
 .showcase-content
 {
@@ -775,48 +790,19 @@ a
 } */
 @media screen and (max-width: 580px) {
     /* showcase and navigation */
-    nav {
-      height: auto;
-      border-bottom: 0;
+    .sidebar 
+    {
+      /* margin-left: -30px; */
+      box-shadow: none;
+      width: 25px;
     }
-    nav ul {
+    .menu a span
+    {
       display: none;
-      height: auto;
     }
-    nav li {
-      width: 100%;
-      float: left;
-      position: relative;
-    }
-    nav a {
-      text-align: left;
-      width: 100%;
-      text-indent: 25px;
-      background: #333;
-      border-bottom: 1px solid #555;
-    }
-    nav a:hover {
-      background: #444;
-    }
-    nav a#openup:after {
-      content: "|||";
-      transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      /* IE 9 */
-      -webkit-transform: rotate(-90deg);
-      /* Safari and Chrome */
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      position: absolute;
-      right: 5px;
-      top: 20px;
-    }
-    nav a#openup {
-      display: block;
-      background-color: #333;
-      width: 100%;
-      position: relative;
+    .sidebar:hover
+    {
+       width: 25px;
     }
     #showcase
     {
@@ -963,19 +949,4 @@ a
     }
 }
 
-.cf:before,
-  .cf:after {
-    content: "";
-    display: table;
-  }
-  
-.cf:after {
-    clear: both;
-  }
-  
-.cf {
-    zoom: 1;
-  }
-
-  /* For IE 6/7 (trigger hasLayout) */
    
