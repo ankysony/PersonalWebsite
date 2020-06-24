@@ -28,8 +28,8 @@ html {
     overflow-y: hidden;
 }
  #showcase::after {
-    pointer-events: none;
-    content: '';
+  pointer-events: none;
+  content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -156,11 +156,99 @@ i:hover
 {
     background:#36393f;
 }
-.image
+.card-1
 {
-    border: 3px solid skyblue;
-    height: 150px;
-    border-radius: 50%;
+   position: relative;
+   width: 200px;
+   height: 200px;
+   text-align: center;
+   overflow: hidden;
+   background: url(../images/profile-pic.png) no-repeat;
+   background-position: center;
+   background-size: cover;
+   border-radius: 20px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.card-1 .surface
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  background: black;
+  transition: .2s linear;
+}
+.card-1 h1
+{
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #f1f1f1;
+  opacity: 0;
+  transform: translateX(30px) translateY(280px);
+  transition: .4s;
+}
+.card-1 h3
+{
+   letter-spacing: 1px;
+  font-size: 14px;
+  color: #f1f1f1;
+  opacity: 0;
+  transform: translateX(28px) translateY(270px);
+  transition: .4s;
+}
+.card-1 .fab 
+{
+   cursor: pointer;
+   display: flex;
+   width: 30px;
+   height: 30px;
+   padding: 7px 8px;
+   font-size: 16px;
+   color: skyblue;
+   background: #ffffff;
+   border-radius: 50%;
+   margin: 10px;
+   opacity: 0;
+   transform: traslateX(-50px) translateY(135px);
+   transition: 0.3s;
+}
+
+.card-1:hover .surface
+{
+   opacity: 0.8;
+   height: 60%;
+}
+.card-1:hover h1
+{
+   opacity: 1;
+   transform: translateX(25px) translateY(115px);
+   transition-delay: 0.5s;
+}
+.card-1:hover h3
+{
+   opacity: 1;
+   transform: translateX(24px) translateY(125px);
+   transition-delay: 0.5s;
+}
+.card-1:hover .fab
+{
+   opacity: 1;
+   transform: translateX(5px) translateY(35px);
+   transition-delay: 0.5s;
+}
+.card-1 .fa-instagram
+{
+   transition-delay: .2s;
+}
+.card-1 .fa-linkedin-in
+{
+  transition-delay: .4s;
+}
+.card-1 .fa-github
+{
+  transition-delay: .6s;
 }
 .info-list ul
 {
