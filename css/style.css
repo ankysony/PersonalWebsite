@@ -299,6 +299,9 @@ i:hover
     margin-left: -17px;
     font-weight: 400;
     text-transform: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 em{
     color:#999999;
@@ -817,11 +820,11 @@ a
     }
     #showcase
     {
-        height: 60vh;
+        height: 45vh;
     }
     .showcase-content
     {
-     margin-top: 25vh;
+     margin-top: 10vh;
      color: #eee;
      text-align: center;
     }
@@ -832,9 +835,25 @@ a
        text-align: left;
        grid-gap: 0px;
     }
-    .image
+    .card-1
     {
-        margin-left: 95px;
+        margin-left: 67px;
+    }
+    .card-1 .surface
+    {
+      display: none;
+    }
+    .card-1 h1
+    {
+      display: none;
+    }
+    .card-1 h3
+    {
+      display: none;
+    }
+    .card-1 .fab
+    {
+      display: none;
     }
     .makegrid
     {
