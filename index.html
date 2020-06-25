@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet"  href="./css/style.css" > 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
@@ -14,31 +16,43 @@
     <link rel="icon" href="images/logo.png" type="image/icon type">
     <title>Ankit Soni | Full stack developer</title>
 </head>
-<body >
+
+<body>
     <!-- showcase and nave -->
     <a name="top"></a>
     <div id="showcase">
-        <div class="sidebar">
-            <div class="menu">
-                <ul>
-                    <li><a href="#showcase"><i class="fas fa-home"></i><span> HOME</span></a></li>
-                    <li><a href="#about"><i class="fas fa-address-card"></i><span> ABOUT</span></a></li>
-                    <li><a href="#projects"><i class="fas fa-project-diagram"></i><span> PROJECTS</span></a></li>
-                    <li><a href="blog.html" target="_blank"><i class="fas fa-blog"></i><span> BLOG</span></a></li>
-                    <li><a href="photos.html" target="_blank"><i class="far fa-images"></i></i><span> GALLERY</span></a></li>
-                    <li><a href="#contact"><i class="fas fa-envelope"></i><span> CONTACT</span></a></li>
+        <header>
+            <nav class='cf '>
+                <ul class='cf'>
+                    <li class="hide-on-small">
+                        <a href="#showcase">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#projects">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="photos.html" target="_blank">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
+                <a href="#" id="openup">Menu</a>
+            </nav>
+        </header>
         <section class="showcase-content">
             <h1>I'm Ankit Soni</h1>
             <div class="social-media">
-                <a target="_blank" href="https://www.linkedin.com/in/ankit-soni-991495152/"><i class="fab fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ankit-soni-991495152/"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a target="_blank" href="https://github.com/ankysony"><i class="fab fa-github"></i></a>
                 <a target="_blank" href='mailto:ankit.soni.che16@iitbhu.ac.in'><i class="fas fa-envelope"></i></a>
             </div>
             <div class="scrolldown">
-                    <a href="#about"><i class="fas fa-arrow-circle-down"></i></a>
+                <a href="#about"><i class="fas fa-arrow-circle-down"></i></a>
             </div>
         </section>
     </div>
@@ -46,7 +60,7 @@
 
     <!-- About section-->
     <a name="about"></a>
-    <div  class="info mar">
+    <div class="info mar">
         <h2 class="size">About Me</h2>
         <div class="makegrid-3">
             <div class="col1-1 pad" style="padding-top: 30px">
@@ -55,12 +69,15 @@
                     <h1>Ankit Soni</h1>
                     <h3>Web-Developer</h3>
                     <a target="_blank" href="https://instagram.com/anky_sony/"><i class="fab fa-instagram"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/ankit-soni-991495152/"><i class="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ankit-soni-991495152/"><i
+                            class="fab fa-linkedin-in"></i></a>
                     <a target="_blank" href="https://github.com/ankysony"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="col2-1 pad">
-                <p class="description-2 center">I am Ankit Soni, full stack developer from India. I have rich experience in front-end designing of websites. I can work on both server side as well as client-side in developing projects. Looking forward to hear from you.</p>
+                <p class="description-2 center">I am Ankit Soni, full stack developer from India. I have rich experience
+                    in front-end designing of websites. I can work on both server side as well as client-side in
+                    developing projects. Looking forward to hear from you.</p>
             </div>
             <div class="col3-1">
                 <div class="info-list ">
@@ -71,7 +88,7 @@
                         <li class="date">
                             Residence - Jhansi
                         </li>
-                        
+
                         <li class="date">
                             freelance - Available
                         </li>
@@ -79,7 +96,7 @@
                 </div>
             </div>
         </div>
-      
+
         <div class="border-bottom"></div>
 
 
@@ -92,12 +109,12 @@
                 <div class="name"><b>INDIAN INSTITUTE OF TECHNOLOGY (BANARAS HINDU UNIVERSITY)</b></div>
                 <div class="place">Varanasi</div>
                 <p class=description><em>Bachelor's degree in Chemical engineering IIT BHU.</em></p>
-            
+
                 <div class="date">2013 - 2015</div>
                 <div class="name"><b>JAI ACADEMY</b></div>
                 <div class="place">Jhansi</div>
                 <p class=description><em>Senior Secondary School, C.B.S.E.</em></p>
-            
+
                 <div class="date">2011 - 2013</div>
                 <div class="name"><b>CHRIST THE KING COLLEGE</b></div>
                 <div class="place">Jhansi</div>
@@ -114,7 +131,7 @@
                 <div class="name"><b>Xpressbees Logistics Solutions Pvt. Ltd. Pune</b></div>
                 <div class="place">Pune</div>
                 <p class=description><em>Line haul network optimisation</em></p>
-            
+
                 <div class="date">May'18 - July'18</div>
                 <div class="name"><b>Design and Innovation Hub IIT BHU</b></div>
                 <div class="place">Varanasi</div>
@@ -129,7 +146,7 @@
     <div class="projects mar">
         <h2 class="size">Projects</h2>
         <section class="card-area">
-        
+
             <!-- Card: City -->
             <section class="card-section">
                 <div class="card">
@@ -139,7 +156,7 @@
                             <div class="card-front">
                                 <div class="card-front__tp card-front__tp--city">
                                     <h2 class="card-front__heading">
-                                        Tik-tac-toe 
+                                        Tik-tac-toe
                                     </h2>
                                     <p class="card-front__text-price">
                                         game
@@ -155,7 +172,7 @@
                             <!-- Back side of card -->
                             <div class="card-back">
                                 <video class="video__container" autoplay muted loop>
-                                    
+
                                     <source class="video__media"
                                         src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761"
                                         type="video/mp4">
@@ -163,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="inside-page">
                         <div class="inside-page__container">
                             <h3 class="inside-page__heading inside-page__heading--city">
@@ -177,7 +194,7 @@
                     </div>
                 </div>
             </section>
-        
+
             <!-- Card: Ski -->
             <section class="card-section ">
                 <div class="card">
@@ -192,14 +209,14 @@
                                         description
                                     </p>
                                 </div>
-        
+
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--ski">
                                         View me
                                     </p>
                                 </div>
                             </div>
-        
+
                             <div class="card-back">
                                 <video class="video__container" autoplay muted loop>
                                     <source class="video__media"
@@ -209,14 +226,14 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="inside-page">
                         <div class="inside-page__container">
                             <h3 class="inside-page__heading inside-page__heading--ski">
                                 For snow lovers
                             </h3>
                             <p class="inside-page__text">
-                               
+
                             </p>
                             <a href="#" class="inside-page__btn inside-page__btn--ski">View website</a>
                             <a href="#" class="inside-page__btn inside-page__btn--ski">View Code</a>
@@ -224,7 +241,7 @@
                     </div>
                 </div>
             </section>
-        
+
             <!-- Card: Beach -->
             <section class="card-section">
                 <div class="card">
@@ -232,7 +249,7 @@
                         <div class="flip-card__container">
                             <div class="card-front">
                                 <div class="card-front__tp card-front__tp--beach">
-        
+
                                     <h2 class="card-front__heading">
                                         Project-3
                                     </h2>
@@ -240,7 +257,7 @@
                                         description
                                     </p>
                                 </div>
-        
+
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--beach">
                                         View me
@@ -256,14 +273,14 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="inside-page">
                         <div class="inside-page__container">
                             <h3 class="inside-page__heading inside-page__heading--beach">
                                 For sun lovers
                             </h3>
                             <p class="inside-page__text">
-                                
+
                             </p>
                             <a href="#" class="inside-page__btn inside-page__btn--beach">View website</a>
                             <a href="#" class="inside-page__btn inside-page__btn--beach">View Code</a>
@@ -271,7 +288,7 @@
                     </div>
                 </div>
             </section>
-        
+
             <!-- Card: Camping -->
             <section class="card-section">
                 <div class="card">
@@ -286,7 +303,7 @@
                                         description
                                     </p>
                                 </div>
-        
+
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--camping">
                                         View me
@@ -302,14 +319,14 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="inside-page">
                         <div class="inside-page__container">
                             <h3 class="inside-page__heading inside-page__heading--camping">
                                 For nature lovers
                             </h3>
                             <p class="inside-page__text">
-                                
+
                             </p>
                             <a href="#" class="inside-page__btn inside-page__btn--camping">View website</a>
                             <a href="#" class="inside-page__btn inside-page__btn--camping">View code</a>
@@ -319,7 +336,7 @@
             </section>
         </section>
     </div>
- 
+
     <div class="border-bottom"></div>
 
     <!-- Contact -->
@@ -342,9 +359,9 @@
                 <button target="_blank" type="submit" value="Send" class="submit-btn">SEND MESSAGE</button>
             </form>
         </div>
-        
+
     </div>
-    
+
     <!-- footer -->
     <footer>
         <div class="container">
@@ -353,10 +370,12 @@
                     <a target="_blank" href="https://www.instagram.com/anky_sony/"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="col2">
-                    <a target="_blank" href="https://www.facebook.com/anky.sony.96/"><i class="fab fa-facebook-square"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/anky.sony.96/"><i
+                            class="fab fa-facebook-square"></i></a>
                 </div>
                 <div class="col3">
-                    <a target="_blank" href="https://www.linkedin.com/in/ankit-soni-991495152/"><i class="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ankit-soni-991495152/"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
                 <div class="col4">
                     <a target="_blank" href="https://github.com/ankysony"><i class="fab fa-github"></i></a>
@@ -367,7 +386,8 @@
                     <a href="tel:+918934044818"><i class="fas fa-phone-alt"></i> <em>+918934044818</em></a>
                 </div>
                 <div class="col2">
-                    <a href="mailto:ankit.soni.che16@iitbhu.ac.in"><i class="fas fa-envelope-open-text"></i> <em>-ankit.soni.che16@iitbhu.ac.in</em></a>
+                    <a href="mailto:ankit.soni.che16@iitbhu.ac.in"><i class="fas fa-envelope-open-text"></i>
+                        <em>-ankit.soni.che16@iitbhu.ac.in</em></a>
                 </div>
             </div>
         </div>
@@ -381,4 +401,5 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
