@@ -144,7 +144,7 @@ i:hover
 }
 .social-media
 {
-    margin-top: 100px;
+    margin-top: 60px;
     word-spacing: 60px;
     font-size: 40px;
     z-index: 1;
@@ -308,6 +308,14 @@ em{
 }
 
 /*==================================== Projects ====================================*/
+.webdev
+{
+   width: 600px;
+   margin-left: 350px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   align-items: center;
+}
 .projects
 {
   background:#36393f;
@@ -943,6 +951,14 @@ a
     }
     
     /*contact*/
+    .webdev
+    {
+      width: 250px;
+      margin-left: 35px;
+      margin-top: 30px;
+      margin-bottom: -30px;
+      align-items: center;
+    }
     .form-box
     {
         margin-left: 8px;
