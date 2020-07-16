@@ -322,7 +322,7 @@ em{
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 160px;
 }
 .card:hover {
   transform: scale(1.2);
@@ -331,7 +331,7 @@ em{
 }
 .card {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 300px;
   grid-template-rows: 210px 150px 65px;
   grid-template-areas: "image" "text" "stats";
 
@@ -353,10 +353,8 @@ em{
 
 .card-text {
   grid-area: text;
-  margin: 25px;
 }
 .card-text .date {
-  color: rgba(255,7,110);
   font-size: 13px;
 }
 .card-text p{
@@ -376,13 +374,12 @@ em{
 .bott {
   position: relative;
   display: inline-block;
-  padding: 12px 36px;
+  padding: 12px 27px;
   margin: 10px 12px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
-  letter-spacing: 2px;
   border-radius: 40px;
   background: linear-gradient(90deg, #0162c8, #55e7fc);
 }
