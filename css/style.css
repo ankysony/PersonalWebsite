@@ -325,7 +325,7 @@ em{
     grid-gap: 160px;
 }
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 
 }
@@ -384,7 +384,7 @@ em{
   background: linear-gradient(90deg, #0162c8, #55e7fc);
 }
 .bott:nth-child(2) {
-  background: linear-gradient(90deg, #755bea, #ff72c0);
+  background: linear-gradient(90deg, #0162c8, #55e7fc);
 }
 /*==================================== Contact ====================================*/
 .cont
